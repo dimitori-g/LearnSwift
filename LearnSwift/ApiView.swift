@@ -21,7 +21,7 @@ struct User: Codable{
 
 class FetchUsers: ObservableObject {
 @Published var items = [User]()
-init() {
+func loadData() {
     let url = URL(string: "https://api.github.com/search/users?q=kanji")!
     URLSession.shared.dataTask(with: url) {(data, response, error) in
         do {
@@ -44,6 +44,11 @@ init() {
 struct ApiView: View {
 @ObservedObject var fetch = FetchUsers()
 var body: some View {
+    if(fetch.items.count == 0){
+        ProgressView().onAppear(){
+        fetch.loadData()
+        }
+    } else {
     List(fetch.items, id: \.login) { user in
         Link(destination: URL(string: user.html_url)!){
         HStack(alignment: .top) {
@@ -56,7 +61,7 @@ var body: some View {
                 .font(.system(size: 11))
                 .foregroundColor(Color.gray)
             }
-        }}}
+        }}}}
     }
 }
 
