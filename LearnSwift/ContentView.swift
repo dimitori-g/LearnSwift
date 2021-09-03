@@ -11,6 +11,7 @@ struct ContentView: View {
     @State var i: Int = 0
     var body: some View {
         VStack{
+            Spacer()
             HStack{
                 ZStack{
                     Circle()
@@ -26,7 +27,7 @@ struct ContentView: View {
                     Text("Count \(i)")
                         .font(.largeTitle)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        .foregroundColor(.gray)
+                        .foregroundColor(Color.gray)
                     Text("Dmitry, 2021")
                 }
             }
@@ -34,8 +35,18 @@ struct ContentView: View {
                 i = 0
             }, label: {
                 Text("Reset")
+                    .padding()
+                    .foregroundColor(Color.yellow)
+                    .background(Color.blue)
             })
+            Spacer()
         }
+        .background(
+            Image("hamburg")
+                .resizable()
+                .scaledToFill()
+                .edgesIgnoringSafeArea(.all)
+        )
     }
 }
 
