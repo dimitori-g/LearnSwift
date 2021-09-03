@@ -45,6 +45,7 @@ struct ApiView: View {
 @ObservedObject var fetch = FetchUsers()
 var body: some View {
     List(fetch.items, id: \.login) { user in
+        Link(destination: URL(string: user.html_url)!){
         HStack(alignment: .top) {
             URLImage(URL(string:user.avatar_url)!){ image in
                 image.resizable().frame(width: 50, height: 50)
@@ -55,7 +56,7 @@ var body: some View {
                 .font(.system(size: 11))
                 .foregroundColor(Color.gray)
             }
-        }}
+        }}}
     }
 }
 
