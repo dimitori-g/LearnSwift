@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF1D4E3A26E4A00700E7EDF7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1D4E3926E4A00700E7EDF7 /* ContentView.swift */; };
 		DF9280B426E1A6B0003B1994 /* LearnSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9280B326E1A6B0003B1994 /* LearnSwiftApp.swift */; };
-		DF9280B626E1A6B0003B1994 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9280B526E1A6B0003B1994 /* ContentView.swift */; };
+		DF9280B626E1A6B0003B1994 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9280B526E1A6B0003B1994 /* CounterView.swift */; };
 		DF9280B826E1A6B3003B1994 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9280B726E1A6B3003B1994 /* Assets.xcassets */; };
 		DF9280BB26E1A6B3003B1994 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF9280BA26E1A6B3003B1994 /* Preview Assets.xcassets */; };
 		DF9280C526E1DEA1003B1994 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9280C426E1DEA1003B1994 /* ListView.swift */; };
@@ -18,9 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF1D4E3926E4A00700E7EDF7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DF9280B026E1A6B0003B1994 /* LearnSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9280B326E1A6B0003B1994 /* LearnSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftApp.swift; sourceTree = "<group>"; };
-		DF9280B526E1A6B0003B1994 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF9280B526E1A6B0003B1994 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		DF9280B726E1A6B3003B1994 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF9280BA26E1A6B3003B1994 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF9280BC26E1A6B3003B1994 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,7 +65,8 @@
 				DF9280C426E1DEA1003B1994 /* ListView.swift */,
 				DF9280D226E22CD7003B1994 /* ApiView.swift */,
 				DF9280B326E1A6B0003B1994 /* LearnSwiftApp.swift */,
-				DF9280B526E1A6B0003B1994 /* ContentView.swift */,
+				DF9280B526E1A6B0003B1994 /* CounterView.swift */,
+				DF1D4E3926E4A00700E7EDF7 /* ContentView.swift */,
 				DF9280B726E1A6B3003B1994 /* Assets.xcassets */,
 				DF9280BC26E1A6B3003B1994 /* Info.plist */,
 				DF9280B926E1A6B3003B1994 /* Preview Content */,
@@ -156,7 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9280D326E22CD7003B1994 /* ApiView.swift in Sources */,
-				DF9280B626E1A6B0003B1994 /* ContentView.swift in Sources */,
+				DF1D4E3A26E4A00700E7EDF7 /* ContentView.swift in Sources */,
+				DF9280B626E1A6B0003B1994 /* CounterView.swift in Sources */,
 				DF9280B426E1A6B0003B1994 /* LearnSwiftApp.swift in Sources */,
 				DF9280C526E1DEA1003B1994 /* ListView.swift in Sources */,
 			);
